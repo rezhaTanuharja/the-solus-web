@@ -1,0 +1,230 @@
+.product-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #CDCFC0;
+  transition: transform 0.2s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-poster {
+  position: relative;
+  aspect-ratio: 2/3;
+  width: 100%;
+}
+
+.product-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.8)
+  );
+  opacity: 0;
+  transition: opacity 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.favorite-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.favorite-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.favorite-btn.active {
+  color: #ff4757;
+}
+
+.product-info {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-info h3 {
+  color: #000000;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.product-info p {
+  color: #1A1A1A;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    font-size: 0.9rem;
+  }
+
+  .product-info {
+    padding: 0.75rem;
+  }
+
+  .favorite-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* .product-info { */
+/*   padding: 1rem; */
+/*   flex: 1; */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   gap: 0.5rem; */
+/* } */
+/**/
+/* .product-info h3 { */
+/*   font-size: 1rem; */
+/*   margin: 0; */
+/* } */
+/**/
+/* .product-info p { */
+/*   color: #999; */
+/*   font-size: 0.9rem; */
+/* } */
+/**/
+/* @media (max-width: 768px) { */
+/*   .product-card { */
+/*     max-width: 300px; */
+/*     font-size: 0.9rem; */
+/*   } */
+/**/
+/*   .product-info { */
+/*     padding: 0.75rem; */
+/*   } */
+/**/
+/*   .favorite-btn { */
+/*     width: 32px; */
+/*     height: 32px; */
+/*     font-size: 1.2rem; */
+/*   } */
+/* } */
+/**/
+/* .product-poster { */
+/*   position: relative; */
+/*   width: 100%; */
+/*   height: 60%; */
+/*   display: flex; */
+/*   justify-content: center; */
+/*   z-index: 1; */
+/* } */
+/**/
+/* .product-poster img { */
+/*   width: 100%; */
+/*   height: 100%; */
+/*   object-fit: cover; */
+/* } */
+/**/
+/* .product-overlay { */
+/*   position: absolute; */
+/*   top: 0; */
+/*   left: 0; */
+/*   right: 0; */
+/*   bottom: 0; */
+/*   background: linear-gradient( */
+/*     to bottom, */
+/*     rgba(0, 0, 0, 0.1), */
+/*     rgba(0, 0, 0, 0.8) */
+/*   ); */
+/*   opacity: 0; */
+/*   transition: opacity 0.2s ease; */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   justify-content: flex-end; */
+/*   padding: 1rem; */
+/*   z-index: 2; */
+/* } */
+/**/
+/* .product-card:hover .product-overlay { */
+/*   opacity: 1; */
+/* } */
+/**/
+/* .favorite-btn { */
+/*   position: absolute; */
+/*   top: 1rem; */
+/*   right: 1rem; */
+/*   color: white; */
+/*   font-size: 1.5rem; */
+/*   padding: 0.5rem; */
+/*   background-color: rgba(0, 0, 0, 0.5); */
+/*   border-radius: 50%; */
+/*   width: 40px; */
+/*   height: 40px; */
+/*   display: flex; */
+/*   align-items: center; */
+/*   justify-content: center; */
+/*   transition: background-color 0.2s; */
+/* } */
+/**/
+/* .favorite-btn:hover { */
+/*   background-color: rgba(0, 0, 0, 0.8); */
+/* } */
+/**/
+/* .favorite-btn.active { */
+/*   color: #ff4757; */
+/* } */
+/**/
+/* .quantity-controls { */
+/*   display: flex; */
+/*   align-items: center; */
+/*   justify-content: center; */
+/*   gap: 0.75rem; */
+/*   padding: 0.5rem 0; */
+/* } */
+/**/
+/* .quantity-controls button { */
+/*   background: none */
+/*   } */
+/**/
+/*   .quantity { */
+/*   width: 3rem; */
+/*   text-align: center; */
+/*   color: white; */
+/*   font-weight: bold; */
+/*   font-size: 1rem; */
+/*   min-width: 3rem; */
+/* } */
