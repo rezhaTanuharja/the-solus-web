@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/the-solus-web/static/css/main.3aaff9ec.css",
-    "main.js": "/the-solus-web/static/js/main.4c0d7ae9.js",
+    "main.js": "/the-solus-web/static/js/main.a332be8f.js",
     "static/js/453.25032bc9.chunk.js": "/the-solus-web/static/js/453.25032bc9.chunk.js",
     "static/media/chapter_1.png": "/the-solus-web/static/media/chapter_1.956c264e8492afa4777f.png",
     "static/media/solus.png": "/the-solus-web/static/media/solus.1aaa714d13c6f10b401b.png",
     "index.html": "/the-solus-web/index.html",
     "main.3aaff9ec.css.map": "/the-solus-web/static/css/main.3aaff9ec.css.map",
-    "main.4c0d7ae9.js.map": "/the-solus-web/static/js/main.4c0d7ae9.js.map",
+    "main.a332be8f.js.map": "/the-solus-web/static/js/main.a332be8f.js.map",
     "453.25032bc9.chunk.js.map": "/the-solus-web/static/js/453.25032bc9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3aaff9ec.css",
-    "static/js/main.4c0d7ae9.js"
+    "static/js/main.a332be8f.js"
   ]
 }
